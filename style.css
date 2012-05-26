@@ -21,13 +21,11 @@ section.back{
 section.front{
 	position: absolute;
 	z-index: 3;
-	width:1200px;
+	width:1400px;
 	min-height:300px;
-	top:100px;
-	background-color: gray;
-	opacity: 0.5;
-	-webkit-opacity: 0.5;
-	filter:alpha(opacity=5);
+	top:150px;
+	
+
 }
 section.dots{
 	position: absolute;
@@ -52,9 +50,36 @@ div.freespace{
 	margin-right: 160px;
 	margin-left: 200px;
 }
+div.dragonboat{
+	float: left;
+	background-image: url('images/dragonboat.png');
+	width:210px;
+	min-height:260px;
+	margin-left: 20px;
+	margin-right: 120px;
+}
+div.nurse{
+	float: left;
+	background-image: url('images/nurse.png');
+	width:232px;
+	min-height:270px;
+	margin-right: 120px;
+}
+div.ford{
+	float: right;
+	background-image: url('images/ford.png');
+	width:205px;
+	min-height:255px;
+	margin-right: 50px;
 
-
-
+}
+div.police{
+	margin-right: 300px;
+	margin-left: 700px;
+	min-height:295px;
+	background-image: url('images/police.png');
+	background-repeat: no-repeat;
+}
 
 
 
