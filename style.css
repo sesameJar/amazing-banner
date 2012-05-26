@@ -1,7 +1,9 @@
 section.container{
-	width:950px;
+	width:1200px;
 	overflow: hidden;
 	min-height:800px;
+	background-color: darkgray;
+	margin:0 auto;
 }
 section.slider{
 	width:2000px;
@@ -11,21 +13,45 @@ section.slider{
 }
 section.back{
 	position: absolute;
-	width: 1100px;
+	width: 1200px;
 	z-index: 2;
+	min-height:200px;
+
 }
 section.front{
 	position: absolute;
 	z-index: 3;
 	width:1200px;
+	min-height:300px;
+	top:100px;
+	background-color: gray;
+	opacity: 0.5;
+	-webkit-opacity: 0.5;
+	filter:alpha(opacity=5);
 }
 section.dots{
 	position: absolute;
 	width:1200px;
 	z-index: 3;
 }
-
-
+div.student{
+	float: left;
+	background-image: url('images/student.png');
+	width: 156px;
+	min-height:207px;
+	margin-left: 100px;
+}
+div.delivery{
+	float: right;
+	background-image: url('images/delivery.png');
+	min-height: 190px;
+	width:200px;
+	margin-right: 70px;
+}
+div.freespace{
+	margin-right: 160px;
+	margin-left: 200px;
+}
 
 
 
