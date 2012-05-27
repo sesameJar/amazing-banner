@@ -4,17 +4,21 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="1styles.css" />
 	<title></title>
 </head>
 <body>
 	<section class="container">
 		<section class="slider">
-			<section class="back">
+			<section class="left"></section>
+			<section onmouseover="document.getElementById('back').style.left='-150px';" class="right"></section>
+			<section class="back" id="back">
 				<div class="student"></div>
 				<div class="delivery"></div>
 				<div class="freespace"></div>
 			</section>
 			<section class="front">
+				
 				<div class="dragonboat"></div>
 				<div class="nurse"></div>
 				<div class="ford"></div>
@@ -22,6 +26,7 @@
 
 			</section>
 			<section class="dots"></section>
+		
 		</section>		
 	</section>
 </body>
