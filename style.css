@@ -17,7 +17,7 @@ section.back{
 	width: 1200px;
 	z-index: 2;
 	min-height:200px;
-
+	-webkit-transition: left 900ms;
 }
 section.front{
 	position: absolute;
@@ -87,7 +87,7 @@ section.slider section.left{
 	min-height:450px;
 	background-color:transparent;
 	float: left;
-	z-index: 3;
+	z-index: 4;
 	left:0;
 	top:0;
 }
@@ -97,7 +97,7 @@ section.slider section.right{
 	min-height:450px;
 	background-color:transparent;
 	float: right;
-	z-index: 3;
+	z-index: 4;
 	left:1060px;
 	top:0;
 }
