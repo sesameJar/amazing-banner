@@ -17,7 +17,7 @@ section.back{
 	width: 1200px;
 	z-index: 2;
 	min-height:200px;
-	-webkit-animation: mymove 2s ;
+	-webkit-animation: mymove 2s paused ;
 
 }
 section.front{
@@ -26,7 +26,7 @@ section.front{
 	width:1400px;
 	min-height:300px;
 	top:150px;
-	
+	-webkit-animation: mymoveleft 3s paused;
 
 }
 section.dots{
@@ -76,7 +76,7 @@ div.ford{
 
 }
 div.police{
-	margin-right: 300px;
+	margin-right: 100px;
 	margin-left: 700px;
 	min-height:295px;
 	background-image: url('images/police.png');
@@ -96,19 +96,31 @@ section.slider section.right{
 	position: absolute;
 	width:100px;
 	min-height:450px;
-	background-color:transparent;
+	background-color:black;
 	float: right;
 	z-index: 4;
-	left:1060px;
+	left:1050px;
 	top:0;
 }
 @-webkit-keyframes mymove
 {
-	from{ left: 0px;}
-	to{ left:-150px;}
+	from{ left: -1050px;}
+	to{ left:-1150px;}
 }
-
-
+@-webkit-keyframes mymoveleft
+{
+	from{ left: -1050px;}
+	to{ left: -950px;}
+}
+section.right section.back{
+	left:-1050px;
+}
+section.right section.front,section.dots{
+	left:-1000px;
+}
+.left:hover .front{
+	-webkit-animation-play-state: running;
+}
 
 
 
