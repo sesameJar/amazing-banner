@@ -1,7 +1,7 @@
 section.container{
 	width:1200px;
 	overflow: hidden;
-	min-height:800px;
+	min-height:700px;
 	background-color: darkgray;
 	margin:0 auto;
 }
@@ -9,7 +9,7 @@ section.slider{
 	width:2000px;
 	position: relative;
 	min-height:450px;
-	left:00px;
+
 
 }
 section.back{
@@ -17,8 +17,10 @@ section.back{
 	width: 1200px;
 	z-index: 2;
 	min-height:200px;
-	-webkit-animation: mymove 2s paused ;
-
+	-webkit-animation: mymove 3s ;
+	-webkit-animation-play-state:paused;
+	-webkit-animation: mymoveleft 3s ;
+	-webkit-animation-play-state:paused;
 }
 section.front{
 	position: absolute;
@@ -26,7 +28,13 @@ section.front{
 	width:1400px;
 	min-height:300px;
 	top:150px;
-	-webkit-animation: mymoveleft 3s paused;
+	-webkit-animation: mymove 2s ;
+	-webkit-animation-play-state:paused;
+	-webkit-animation: mymoveleft 2s ;
+	-webkit-animation-play-state:paused;
+
+
+
 
 }
 section.dots{
@@ -86,9 +94,9 @@ section.slider section.left{
 	position: absolute;
 	width:100px;
 	min-height:450px;
-	background-color:transparent;
-	float: left;
-	z-index: 4;
+	background-color:red;
+	
+	z-index: 5;
 	left:0;
 	top:0;
 }
@@ -97,7 +105,7 @@ section.slider section.right{
 	width:100px;
 	min-height:450px;
 	background-color:black;
-	float: right;
+	
 	z-index: 4;
 	left:1050px;
 	top:0;
@@ -110,17 +118,36 @@ section.slider section.right{
 @-webkit-keyframes mymoveleft
 {
 	from{ left: -1050px;}
-	to{ left: -950px;}
+	to{ left: -850px;}
 }
 section.right section.back{
 	left:-1050px;
 }
-section.right section.front,section.dots{
+section.right section.front{
 	left:-1000px;
 }
 .left:hover .front{
+	-webkit-animation-name:mymoveleft;
+	-webkit-animation-play-state: running;
+
+}
+.left:hover .back{
+	-webkit-animation-name:mymoveleft;
 	-webkit-animation-play-state: running;
 }
+.right:hover .front{
+	-webkit-animation-name:mymove;
+	-webkit-animation-play-state: running;
+
+}
+.right:hover .back{
+	-webkit-animation-name:mymove;
+	-webkit-animation-play-state: running;
+
+}
+
+
+
 
 
 
